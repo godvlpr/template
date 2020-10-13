@@ -17,16 +17,4 @@ services:
     volumes:
       - ./data/localise-db:/var/lib/postgresql/data
 
-  template-swagger-ui:
-    image: swaggerapi/swagger-ui
-    environment:
-      - PORT=8080
-    ports:
-      - 7001:8080
-
-  template-swagger-editor:
-    image: swaggerapi/swagger-editor
-    ports:
-      - 7002:8080
-
 
